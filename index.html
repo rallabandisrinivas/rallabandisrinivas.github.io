@@ -15,7 +15,9 @@
             <a href="#publications" class="nav-link">Publications</a>
             <a href="#research" class="nav-link">Expertise</a>
             <a href="#teaching" class="nav-link">Experience</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
         </div>
     </nav>
 
@@ -209,12 +211,6 @@
                     </div>
                 </div>
             </section>
-
-            <section id="contact" class="section">
-                <h1>Contact</h1>
-                <p><strong>Email:</strong> rallabandi.srinivas@gmail.com</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/rallabandisrinivas" target="_blank">rallabandisrinivas</a></p>
-            </section>
         </main>
     </div>
 
@@ -231,6 +227,7 @@
     </div>
 
     <script>
+        // Image Modal Functions
         function openImageModal() {
             document.getElementById('imageModal').style.display = 'block';
             document.getElementById('modalImage').src = 'images/profile-v2.jpg';
@@ -246,6 +243,38 @@
                 closeImageModal();
             }
         });
+
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Check for saved theme preference or default to dark
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        body.classList.add(currentTheme + '-theme');
+        updateThemeIcon(currentTheme);
+
+        themeToggle.addEventListener('click', function() {
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light');
+                updateThemeIcon('light');
+            } else {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+                updateThemeIcon('dark');
+            }
+        });
+
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                themeIcon.className = 'fas fa-moon';
+            }
+        }
     </script>
 </body>
 </html>
