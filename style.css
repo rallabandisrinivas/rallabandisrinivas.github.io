@@ -111,39 +111,24 @@ body {
 }
 
 .social-links {
-    padding-top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.social-links h3 {
-    display: none;
+.social-links li {
+    margin-bottom: 8px;
 }
 
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.social-links a {
     color: #666;
     text-decoration: none;
-    padding: 8px 0;
-    margin-bottom: 6px;
-    transition: all 0.2s ease;
-    font-size: 0.95em;
+    font-size: 0.9em;
+    display: block;
+    transition: color 0.2s ease;
 }
 
-.social-link i {
-    display: inline-block;
-    width: 1.25em;
-    font-size: 1.1em;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.social-link span {
-    font-size: 0.95em;
-    font-weight: 400;
-}
-
-.social-link:hover {
+.social-links a:hover {
     color: #4A86E8;
 }
 
