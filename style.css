@@ -75,8 +75,8 @@ body {
     margin: 30px auto;
     padding: 0 30px;
     display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 60px;
+    grid-template-columns: 260px 1fr;
+    gap: 50px;
 }
 
 /* Sidebar */
@@ -94,8 +94,8 @@ body {
 }
 
 .profile-image {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 0 auto 20px;
     display: block;
