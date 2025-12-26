@@ -22,7 +22,7 @@
     <div class="container">
         <aside class="sidebar">
             <div class="profile">
-                <img src="images/profile-v2.jpg" alt="Srinivas Rallabandi" class="profile-image">
+                <img src="images/profile-v2.jpg" alt="Srinivas Rallabandi" class="profile-image" onclick="openImageModal()" style="cursor: pointer;">
                 <h2 class="profile-name">Srinivas Rallabandi</h2>
                 <p class="profile-title">PMP, P.Eng.</p>
                 <p class="profile-affiliation">📍 Champaign, Illinois</p>
@@ -239,5 +239,29 @@
             <p>&copy; 2025 Rallabandi Srinivas. Hosted on GitHub Pages.</p>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeImageModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openImageModal() {
+            document.getElementById('imageModal').style.display = 'block';
+            document.getElementById('modalImage').src = 'images/profile-v2.jpg';
+        }
+
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+    </script>
 </body>
 </html>
