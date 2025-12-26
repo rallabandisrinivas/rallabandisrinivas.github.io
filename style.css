@@ -131,8 +131,9 @@ body {
 }
 
 .social-link i {
-    width: 20px;
-    font-size: 1.2em;
+    display: inline-block;
+    width: 1.25em;
+    font-size: 1.1em;
     text-align: center;
     flex-shrink: 0;
 }
