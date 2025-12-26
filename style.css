@@ -104,11 +104,12 @@ body {
 }
 
 .profile-name {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #f0f0f0;
     margin-bottom: 8px;
     font-weight: 600;
     line-height: 1.4;
+    white-space: nowrap;
 }
 
 .profile-title {
