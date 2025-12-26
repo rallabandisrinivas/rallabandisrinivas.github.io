@@ -75,8 +75,8 @@ body {
     margin: 30px auto;
     padding: 0 30px;
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 40px;
+    grid-template-columns: 300px 1fr;
+    gap: 35px;
 }
 
 /* Sidebar */
