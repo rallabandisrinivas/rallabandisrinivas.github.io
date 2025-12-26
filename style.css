@@ -119,7 +119,9 @@ body {
 }
 
 .social-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #666;
     text-decoration: none;
     padding: 6px 0;
@@ -129,7 +131,9 @@ body {
 }
 
 .social-link i {
-    display: none;
+    width: 18px;
+    font-size: 1.1em;
+    text-align: center;
 }
 
 .social-link span {
