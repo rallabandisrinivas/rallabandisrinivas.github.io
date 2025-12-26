@@ -132,6 +132,27 @@ body {
     color: #4A86E8;
 }
 
+/* Social media icon colors */
+.social-links .fa-linkedin {
+    color: #007bb6;
+}
+
+.social-links .fa-github {
+    color: #171516;
+}
+
+.social-links .fa-envelope {
+    color: #000;
+}
+
+.social-links .fa-medium {
+    color: #000;
+}
+
+.social-links .fa-x-twitter {
+    color: #000;
+}
+
 /* Main Content */
 .main-content {
     background: transparent;
